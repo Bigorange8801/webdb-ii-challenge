@@ -7,7 +7,7 @@ exports.up = function(knex, Promise) {
 
       tbl.text('VIN', 17).unique().notNullable();
       // creates a text field called name which is both required and unique
-      tbl.string('make', 80).unique().notNullable();
+      tbl.string('make', 80).notNullable();
       // creates a numeric field called budget which is required
       tbl.string('model',80).notNullable();
       tbl.integer('mileage').notNullable();
